@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% if title %}
+        <title>SPUNK - {{ title }}</title>
+    {% else %}
+        <title>SPUNK</title>
+    {% endif %}
+</head>
+<body>
+    <h1>SPUNK - a text based RPG - 2020</h1>
+    {%- for post in posts -%}
+        <li>{{post}}</li> 
+    {%- endfor -%}
+</body>
+</html>
