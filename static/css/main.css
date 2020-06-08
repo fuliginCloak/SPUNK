@@ -18,19 +18,38 @@ body {
 
     background-color: #c2d1cf;
     font-family: 'introheadr-base';
-    display: flex;
+    display: inline-flex;
 
 }
 ul{
 
     color: #ffff;
     background-color: #000000;
-    margin: 0px;
+    /* margin-left: 5px; */
     padding: 15px;
     /* text-indent: 100px; */
     /* text-align: center; */
-    font-size: 14px;
+    font-size: 20px;
     position: absolute;
     list-style: none;
 
+}
+
+
+a{
+    color: #ffff;
+}
+
+h2{
+    margin: 0px;
+    display: block;
+    flex-direction: column;
+   
+}
+
+p {
+    position: absolute;
+    padding: 30px;
+    margin: 10px;
+    opacity: 50%;
 }

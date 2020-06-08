@@ -23,7 +23,7 @@
     <header class="site-header">
         <nav class="navbar navbar-expand-md navbar-dark bg-black fixed-top">
             <div class="container">
-            <a class="navbar-brand mr-4" style="font-size: 40px;" href="/">SPUNK</a>
+            <a class="navbar-brand mr-4" style="font-size: 50px;" href="/">SPUNK</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,7 +42,11 @@
     </nav>
     </header>
         
-        {% block content%} {% endblock content %}
+        {% block content%}
+        <div class="slogan">
+            <p>{{slogan}}</p>
+        </div> 
+        {% endblock content %}
        
      
 
