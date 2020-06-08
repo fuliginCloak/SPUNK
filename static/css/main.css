@@ -18,18 +18,19 @@ body {
 
     background-color: #c2d1cf;
     font-family: 'introheadr-base';
-    display: inline;
+    display: flex;
 
 }
-
-h2{
+ul{
 
     color: #ffff;
     background-color: #000000;
     margin: 0px;
-    padding: 26px;
-    text-indent: 100px;
-    text-align: center;
+    padding: 15px;
+    /* text-indent: 100px; */
+    /* text-align: center; */
     font-size: 14px;
+    position: absolute;
+    list-style: none;
 
 }
