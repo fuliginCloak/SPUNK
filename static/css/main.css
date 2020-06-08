@@ -1,0 +1,35 @@
+@font-face 
+{
+    font-family: 'introheadr-base';
+    src: url('introheadr-base-webfont.woff2') format('woff2'),
+         url('introheadr-base-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+
+body {
+
+    background-color: #c2d1cf;
+    font-family: 'introheadr-base';
+    display: inline;
+
+}
+
+h2{
+
+    color: #ffff;
+    background-color: #000000;
+    margin: 0px;
+    padding: 26px;
+    text-indent: 100px;
+    text-align: center;
+    font-size: 14px;
+
+}
