@@ -21,15 +21,15 @@
 <body>
 
     <header class="site-header">
-        <nav class="navbar navbar-expand-md navbar-dark bg-black fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-black navbar-fixed-top">
             <div class="container">
-            <a class="navbar-brand mr-4" style="font-size: 50px;" href="/">SPUNK</a>
+            <a class="navbar-brand mr-4" style="font-size: 78px;" href="/">SPUNK</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarToggle">
                 <div class="navbar-nav mr-auto">
-                <a class="nav-item nav-link" href="/game">The Game</a>
+                <a class="nav-item nav-link" href="/aboutgame">The Game</a>
                 <a class="nav-item nav-link" href="/community">Community</a>
                 </div>
                 <!-- Navbar Right Side -->
@@ -37,16 +37,17 @@
                 <a class="nav-item nav-link" href="/login">Login</a>
                 <a class="nav-item nav-link" href="/register">Register</a>
                 </div>
+
+                
             </div>
         </div>
     </nav>
+
     </header>
         
-        {% block content%}
-        <div class="slogan">
-            <p>{{slogan}}</p>
-        </div> 
-        {% endblock content %}
+    {% block content%}
+        
+    {% endblock content %}
        
      
 
