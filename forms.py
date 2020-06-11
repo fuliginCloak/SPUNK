@@ -1,29 +1,31 @@
-from wtforms import Form, BooleanField, StringField, PasswordField, SubmitField, validators
+
+from flask_wtf import FlaskForm
+from wtforms import BooleanField, StringField, PasswordField, SubmitField, validators
+from wtforms.validators import DataRequired, EqualTo, Length, Email 
 
 
 
 
 
+class RegisterForm(FlaskForm):
+    username=StringField('Username', validators=[DataRequired(), Length(min=2, max=20)])
 
-class RegisterForm(Form):
-    username=StringField('Username', [validators.DataRequired(), validators.Length(min=2, max=20)])
+    email = StringField ('Email', validators=[DataRequired(), Email()])
 
-    email = StringField ('Email', [validators.DataRequired(), validators.Email()])
-
-    password = PasswordField('Password', [validators.DataRequired(), validators.Length(min=6)])
-    confirm_password = PasswordField('Confirm Password', [validators.DataRequired(), validators.EqualTo('password')])
+    password = PasswordField('Password', validators=[DataRequired(), Length(min=6)])
+    confirm = PasswordField('Confirm Password', validators= [DataRequired(), EqualTo('password')])
 
     submit = SubmitField('Make an account')
 
 
 
-class LoginForm(Form):
+class LoginForm(FlaskForm):
 
-    email = StringField ('Email',[validators.DataRequired(), validators.Email()])
+    username = StringField ('username', validators=[DataRequired()])
 
-    password = PasswordField('Password', [validators.DataRequired(), validators.Length(min=6)])
+    password = PasswordField('Password', validators= [DataRequired()])
 
-    cookie_remember = BooleanField('Save username?')
+    save = BooleanField('Save username?')
     submit = SubmitField('Login')
 
 
