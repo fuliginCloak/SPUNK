@@ -4,12 +4,12 @@ Beginner project building  a website for a fake game using python's Flask module
 
 Features:
 
-registeration - Complete
-Login - inprogress
-Forum - inprogres
-bug tracker - inprogress
-faq - inprogress
-information pages - inprogress
-news page - inprogress
-social media links - inprogress
-news letters - inprogress
+- registeration page - Complete
+- login page - inprogress
+- web forum page - inprogres
+- bug tracker / ticket system - inprogress
+- faq - inprogress
+- information pages - inprogress
+- social media links - inprogress
+- news letters - inprogress
+- product page / pre-order - stretch goal
